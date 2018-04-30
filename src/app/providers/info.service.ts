@@ -21,7 +21,7 @@ export class InfoService {
   cargarInfoAbout() {
     this.http.get('https://vueloaleatorio-fb7ae.firebaseio.com/equipo.json').subscribe(data => {
       this.equipo = data.json();
-      console.log(this.equipo);
+      //console.log(this.equipo);
     });
   }
 }

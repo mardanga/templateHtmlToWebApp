@@ -23,8 +23,8 @@
         <p>Espere por favor...</p>
     </div>
 
-    <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4 animated fadeIn" *ngIf="_ps.productos.length > 0 && !_ps.cargando">
-        <a [routerLink]="['/producto', producto.cod]" class="rk-item ae-masonry__item" *ngFor="let producto of _ps.productos">
+    <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4 animated fadeIn" *ngIf="_ps.productosFiltrados.length > 0 && !_ps.cargando">
+        <a [routerLink]="['/producto', producto.cod]" class="rk-item ae-masonry__item" *ngFor="let producto of _ps.productosFiltrados">
             <img src="assets/img/productos/{{producto.url}}.jpg" alt="">
             <div class="item-meta">
                 <h2>{{producto.titulo}}</h2>
